@@ -1,0 +1,46 @@
+body {
+    font-family: "PT Sans Caption", sans-serif;
+    background-color: #F7ECDE;
+}
+
+.Bookmark-style{
+    border: 2px dotted #352e28;
+    border-left: none;
+    border-right: none;
+}
+
+.btn{
+    --bs-btn-padding-x: 20px;
+    --bs-btn-padding-y: 5px;
+}
+
+.Head-style{
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.Head-style::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    left: 0;
+    bottom: 3px;
+    background-color: #fec260;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.Head-style:hover::before{
+    height: 60%;
+}
+
+.body-style{
+    font-family: "Righteous", sans-serif;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    color: transparent;
+}

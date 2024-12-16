@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="images/bookmark_8915390.png" type="image/x-icon">
+    <!-- ^ ==========> GOOGLE FONTS LINK <========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <!-- ^ ==========> FONT AWESOME LINK <========== -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- ^ ==========> BOOTSTRAP LINK <========== -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!-- ^ ==========> STYLE SHEET LINK <========== -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center align-items-center flex-column py-5">
+        <h1 class="Head-style position-relative">Bookmarker</h1>
+        <div class=" w-100 d-flex flex-column justify-content-center align-items-center p-5 Bookmark-style mt-4">
+            <h2 class="body-style">
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+            <div class="my-3 w-100">
+                <i class="fa-solid fa-book-bookmark"></i>
+                <label for="siteName" class="form-label fw-semibold"> Site Name</label>
+                <input type="text" class="form-control" oninput="validatInputs(this)" id="siteName"
+                    placeholder="Enter Your Site Name">
+            </div>
+            <div class="my-3 w-100">
+                <i class="fa-solid fa-link"></i>
+                <label for="siteUrl" class="form-label fw-semibold">Site URL</label>
+                <input type="text" class="form-control" oninput="validatInputs(this)" id="siteUrl"
+                    placeholder="Enter Your Site URL">
+            </div>
+            <button class="btn btn-danger mt-3" disabled id="submitBtn" onclick="addBookmark()">Submit</button>
+        </div>
+        <table class="bg-light text-center w-100 m-4 table ">
+            <thead>
+                <tr>
+                    <th>index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="myTable">
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+    <!-- ^ ==========> BOOTSTRAP JAVASCRIPT LINK <========== -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <!-- ^ ==========> JAVASCRIPT SHEET LINK <========== -->
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
